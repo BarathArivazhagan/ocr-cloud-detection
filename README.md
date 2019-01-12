@@ -1,5 +1,5 @@
 # ocr-cloud-detection
-A OCR cloud service API to try out OCR text detection using cloud managed services powered by AWS, Azure &amp; GCP.
+A OCR cloud service API for OCR extraction using cloud managed services powered by AWS, Azure &amp; GCP.
 
 
 ## Comparison Analysis
@@ -16,19 +16,7 @@ A OCR cloud service API to try out OCR text detection using cloud managed servic
 		<td> AWS Rekognition </td>
 		<td> Azure Cognitive Service</td>
 		<td> Google Cloud Vision </td>
-    </tr>
-      <tr>		
-		<td> Service </td>
-		<td> AWS Rekognition </td>
-		<td> Azure Cognitive Service</td>
-		<td> Google Cloud Vision </td>
-    </tr>    
-      <tr>		
-		<td> Service </td>
-		<td> AWS Rekognition </td>
-		<td> Azure Cognitive Service</td>
-		<td> Google Cloud Vision </td>
-    </tr>    
+    </tr>     
      <tr>		
 		<td> OCR </td>
 		<td> Yes </td>
@@ -86,9 +74,32 @@ A OCR cloud service API to try out OCR text detection using cloud managed servic
 			</ul> 
 	    </td>
     </tr>
-    
-
-
+      <tr>		
+		<td> Pricing </td>
+		<td> 
+			<ul>
+				<li> Cost per image 0-1M $0.01 </li> 
+				<li> Cost for first 1M images per month $0.001*1,000,000=$1,000 </li>
+				<li> Cost per image 1M-10M $0.0008 </li> 
+			</ul> 
+	    </td>
+		<td> 
+			<ul>
+				<li> 0-1M transactions — $1 per 1,000 transactions</li> 
+				<li> 1M-5M transactions — $0.80 per 1,000 transactions  </li>
+				<li> 5M-10M transactions — $0.65 per 1,000 transactions   </li> 
+				<li> E10M-100M transactions — $0.65per 1,000 transactions </li>
+				<li> 100M+ transactions — $0.65 per 1,000 transactions    </li> 			
+			</ul> 
+	    </td>
+		<td> 
+			<ul>
+				<li> First 1000 untis - Free  </li> 
+				<li> Units 1001 - 5,000,000 / month - $1.50  </li>
+				<li>  Units 5,000,001 - 20,000,000 / month - $1 </li> 					
+			</ul> 
+	    </td>
+    </tr>    
 </table>
 
 ## Environment Setup
