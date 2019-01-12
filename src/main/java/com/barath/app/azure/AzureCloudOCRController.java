@@ -1,14 +1,15 @@
-package com.barath.app.azure.sdk.model;
+package com.barath.app.azure;
 
 
-import com.barath.app.azure.sdk.model.AzureOCRImageResponse;
-import com.barath.app.azure.sdk.model.Line;
-import com.barath.app.azure.sdk.model.Region;
-import com.barath.app.azure.sdk.model.Word;
+import com.barath.app.azure.AzureOCRImageResponse;
+import com.barath.app.azure.Line;
+import com.barath.app.azure.Region;
+import com.barath.app.azure.Word;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.*;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.StringUtils;
@@ -28,6 +29,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Profile("azure")
 @RestController
 public class AzureCloudOCRController {
 

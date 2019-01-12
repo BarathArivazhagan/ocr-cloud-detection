@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "azure.endpoint.url",
+    "type": "java.lang.String",
+    "description": "A description for 'azure.endpoint.url' computer vision url"
+  },
+  {
+    "name": "azure.subscription.id",
+    "type": "java.lang.String",
+    "description": "A description for 'azure.subscription.id'"
+  },
+  {
+    "name": "aws.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.access-key'"
+  },
+  {
+    "name": "aws.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.secret-key'"
+  }
+]}

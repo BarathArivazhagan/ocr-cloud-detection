@@ -1,23 +1,22 @@
 
-package com.barath.app.azure.sdk.model;
+package com.barath.app.azure;
 
 import com.fasterxml.jackson.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "boundingBox",
-    "lines"
+    "text"
 })
-public class Region {
+public class Word {
 
     @JsonProperty("boundingBox")
     private String boundingBox;
-    @JsonProperty("lines")
-    private List<Line> lines = null;
+    @JsonProperty("text")
+    private String text;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,14 +30,14 @@ public class Region {
         this.boundingBox = boundingBox;
     }
 
-    @JsonProperty("lines")
-    public List<Line> getLines() {
-        return lines;
+    @JsonProperty("text")
+    public String getText() {
+        return text;
     }
 
-    @JsonProperty("lines")
-    public void setLines(List<Line> lines) {
-        this.lines = lines;
+    @JsonProperty("text")
+    public void setText(String text) {
+        this.text = text;
     }
 
     @JsonAnyGetter

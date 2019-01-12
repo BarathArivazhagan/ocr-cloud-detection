@@ -1,5 +1,5 @@
 
-package com.barath.app.azure.sdk.model;
+package com.barath.app.azure;
 
 import com.fasterxml.jackson.annotation.*;
 

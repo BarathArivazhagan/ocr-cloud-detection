@@ -1,20 +1,23 @@
 package com.barath.app.gcp;
 
 
-import com.google.cloud.vision.v1.Feature;
-import com.google.cloud.vision.v1.Feature.Type;
+import java.lang.invoke.MethodHandles;
+import java.util.List;
+
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.constraints.NotNull;
-import java.lang.invoke.MethodHandles;
-import java.util.List;
+import com.google.cloud.vision.v1.Feature;
 
+@Profile("gcp")
 @RestController(value="/gcp")
 public class GCPCloudOCRController {
 
