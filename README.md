@@ -30,6 +30,12 @@ A OCR cloud service API for OCR extraction using cloud managed services powered 
 		<td> Yes </td>
     </tr>
     <tr>		
+		<td> Languages Supported </td>
+		<td> only ENG </td>
+		<td> 25 Languages </td>
+		<td> 25 Languages </td>
+    </tr>
+    <tr>		
 		<td> Available Regions </td>
 		<td> 
 			<ul>
@@ -104,7 +110,7 @@ A OCR cloud service API for OCR extraction using cloud managed services powered 
 
 ## Environment Setup
 
-> Set up environment variables before you start the application
+- Set up environment variables before you start the application
 
 ```
 SPRING_CLOUD_GCP_CREDENTIALS_LOCATION=<< path to GCP credentails location containing keys >>
@@ -113,4 +119,9 @@ AZURE_ENDPOINT_URL=<< Azure computer vision api location service url >>
 AZURE_SUBSCRIPTION_ID=<< Azure computer vision service subscription keys >>
 AWS_ACCESS_KEY=<< AWS subscription access key to service >>
 AWS_SECRET_KEY=<< AWS subscription secret key to service >>
+```
+- Spring Profile support to enable/disable particular cloud provider service
+
+```
+spring.profiles.active=aws # possible values aws | gcp | azure or all three aws,gcp,azure.
 ```
