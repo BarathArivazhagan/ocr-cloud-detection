@@ -120,7 +120,7 @@ AZURE_SUBSCRIPTION_ID=<< Azure computer vision service subscription keys >>
 AWS_ACCESS_KEY=<< AWS subscription access key to service >>
 AWS_SECRET_KEY=<< AWS subscription secret key to service >>
 ```
-- Spring Profile support to enable/disable particular cloud provider service
+- Spring profile support to enable/disable particular cloud provider service
 
 ```
 spring.profiles.active=aws # possible values aws | gcp | azure or all three aws,gcp,azure.
